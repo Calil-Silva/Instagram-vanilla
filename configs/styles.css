@@ -1,0 +1,154 @@
+.layout {
+    width: 935px;
+    margin: auto;
+    font-family: Roboto;
+    font-size: 12px;
+    color: rgba(38, 38, 38, 1);
+    height: 2000px;
+    overflow: hidden;
+}
+
+/* Barra */
+.barra {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: background: rgba(255, 255, 255, 1);
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+.inicio {
+    display: flex;
+    align-items: center;
+}
+.separadorVertical {
+    width: 1px;
+    height: 25px;
+    background-color: #e6e6e6;
+    margin-left: 10px   ;
+    margin-right: 10px;
+}
+.separadorHorizontal {
+    width: 100%;
+    height: 1px;
+    background-color: #e6e6e6;
+}
+.pesquisar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 215px;
+    height: 28px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;`
+    background-color: background: rgba(250, 250, 250, 1);
+    color: #e6e6e6;
+    font-size: 12px;
+}
+.espaçamento ion-icon {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+ion-icon {
+    font-size: 22px;
+}
+.caixa ion-icon:last-child {
+    font-size: 30px;;
+    left: 1070px;
+    background-color: white;
+}
+
+/* Stories */
+.caixa {
+    width: 614px;
+    height: 118px;
+    margin-top: 34px;
+    border: 1px solid #e6e6e6;
+    display: flex;
+    overflow: hidden;
+}
+.caixa img:nth-child(odd) {
+    height: 66px;
+}
+.caixa img:nth-child(even) {
+    height: 54px;
+}
+.absolute {
+    position: absolute;
+    border-radius: 100%;
+}
+.relative {
+    position: relative;
+    border-radius: 100%;
+}
+.centralizarTXT:first-child {
+    margin-left: 13px;
+}
+.centralizarIMG {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 13px;
+    margin-left: 13px;
+    position: relative;
+}
+.centralizarTXT {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    margin-top: 13px;
+}
+
+/* Posts */
+.post1 {
+    height: 749px;
+    width: 614px;
+    margin-top: 24px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+}
+.post1_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    font-weight: bold;
+}
+.meowed {
+    display: flex;
+    align-items: center;
+}
+.meowed img {
+    width: 32px;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+.gato img {
+    height: 614px;
+    width: 614px;
+}
+.opcoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.opcoes .ion-icon {
+    margin-right: 10px;
+}
+
+.curtidas {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.curtidas img {
+    width: 20px;
+    border-radius: 100%;
+    margin-right: 5px;
+    
+}
