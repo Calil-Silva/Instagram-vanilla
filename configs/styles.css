@@ -4,7 +4,7 @@
     font-family: Roboto;
     font-size: 12px;
     color: rgba(38, 38, 38, 1);
-    height: 2000px;
+    height: 1900px;
     overflow: hidden;
 }
 
@@ -12,9 +12,9 @@
 .barra {
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background-color: background: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);
     margin-top: 13px;
     margin-bottom: 13px;
 }
@@ -33,6 +33,8 @@
     width: 100%;
     height: 1px;
     background-color: #e6e6e6;
+    position: absolute;
+    left: 0;
 }
 .pesquisar {
     display: flex;
@@ -54,9 +56,11 @@ ion-icon {
     font-size: 22px;
 }
 .caixa ion-icon:last-child {
-    font-size: 30px;;
-    left: 1070px;
-    background-color: white;
+    font-size: 25px;;
+    left: 1065px;
+    margin-bottom: 13px;
+    background-color:white;
+    color: #e6e6e6
 }
 
 /* Stories */
@@ -130,16 +134,19 @@ ion-icon {
     height: 614px;
     width: 614px;
 }
+video {
+    height: 614px;
+    width: 614px;
+    object-fit: cover;
+}
 .opcoes {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
-
 .opcoes .ion-icon {
     margin-right: 10px;
 }
-
 .curtidas {
     display: flex;
     align-items: center;
@@ -150,5 +157,71 @@ ion-icon {
     width: 20px;
     border-radius: 100%;
     margin-right: 5px;
-    
+}
+
+/* Sidebar */
+.sidebar {
+    width: 293px;
+    margin-top: 57px;
+}
+.catana {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.sidebar img {
+    width: 32px;
+    border-radius: 100%;
+    margin-right: 11px;
+}
+.catana img {
+    width: 56px;
+    border-radius: 100%;
+}
+.sugestoes_pra_voce {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+}
+h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+h4 {
+    font-size: 12px;
+    color: rgba(142, 142, 142, 1);
+}
+h5 {
+    font-size: 12px;
+    color: blue;
+}
+h6 {
+    font-size: 12px;
+    color: black;
+}
+h7 {
+    font-size: 11px;
+    color: rgba(199, 199, 199, 1);
+}
+.sugestões {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.seguidores {
+    display: flex;
+}
+.seguidores img {
+    margin-right: 11px;
+}
+.infos {
+    width: 290px;
+}
+.infos div:first-child {
+    margin-bottom: 18px;
+}
+.principal {
+    display: flex;
+    justify-content: space-between;
 }
