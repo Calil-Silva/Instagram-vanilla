@@ -22,6 +22,18 @@
     display: flex;
     align-items: center;
 }
+.barra2 {
+    display: none;
+    width: 100%;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+}
+.inicio2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 13px 15px 13px 15px;
+}
 .separadorVertical {
     width: 1px;
     height: 25px;
@@ -30,11 +42,12 @@
     margin-right: 10px;
 }
 .separadorHorizontal {
+    position: absolute;
     width: 100%;
     height: 1px;
     background-color: #e6e6e6;
-    position: absolute;
     left: 0;
+    right: 0;
 }
 .pesquisar {
     display: flex;
@@ -44,7 +57,7 @@
     height: 28px;
     border: 1px solid #e6e6e6;
     border-radius: 3px;`
-    background-color: background: rgba(250, 250, 250, 1);
+    background-color: rgba(250, 250, 250, 1);
     color: #e6e6e6;
     font-size: 12px;
 }
@@ -55,13 +68,9 @@
 ion-icon {
     font-size: 22px;
 }
-.caixa ion-icon:last-child {
-    font-size: 25px;;
-    left: 1065px;
-    margin-bottom: 13px;
-    background-color:white;
-    color: #e6e6e6
-}
+.espaçamento ion-icon:last-child {
+    margin-right: 0;
+  }
 
 /* Stories */
 .caixa {
@@ -71,6 +80,14 @@ ion-icon {
     border: 1px solid #e6e6e6;
     display: flex;
     overflow: hidden;
+}
+.caixa ion-icon:last-child {
+    font-size: 25px;;
+    left: 5px;
+    margin-bottom: 13px;
+    z-index: 1;
+    color: rgba(0, 0, 0, 0);
+    background-color: white;
 }
 .caixa img:nth-child(odd) {
     height: 66px;
@@ -104,11 +121,11 @@ ion-icon {
     align-items: center;
     justify-content: center;  
     margin-top: 13px;
+    position:relative;
 }
 
 /* Posts */
 .post1 {
-    height: 749px;
     width: 614px;
     margin-top: 24px;
     border: 1px solid #e6e6e6;
@@ -152,6 +169,7 @@ video {
     align-items: center;
     margin-left: 10px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 .curtidas img {
     width: 20px;
@@ -224,4 +242,86 @@ h7 {
 .principal {
     display: flex;
     justify-content: space-between;
+}
+
+/* barra inferior mobile */
+.barra_fim_mobile {
+    display: none;
+    height: 54px;
+    width: 100vw;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    background-color: white;
+}
+.barra_fim_mobile ion-icon {
+    margin: 15px;
+}
+
+@media (max-width: 935px) {
+    .sidebar {
+        display: none;
+    }
+    .sidebar_na {
+        margin: auto;
+    }
+    .layout {
+        width: 100%;
+    }
+    .barra {
+        margin-right: 18px;
+        margin-left: 18px;
+    }
+    .espaçamento ion-icon:last-child {
+        margin-right: 40px;
+      }
+}
+
+@media (max-width: 614px) {
+    .layout {
+        width: 100%;
+        height: 1470px;
+        overflow: hidden;
+
+    }
+    .barra {
+        display: none;
+    }
+    .inicio {
+        display: none;
+    }
+    .barra2 {
+        display: initial;
+    }
+    .caixa {
+        margin-top: 0;
+        width: 100%;
+        color: rgba(38, 38, 38, 1);
+    }
+    .post1 {
+        width: auto;
+        width: 100%;
+    }
+    div .post1:first-child {
+        margin-top: 0;
+        border-top: none;
+    }
+    .post1 {
+        width: 100vw;
+    }
+    .gato img {
+        height: 100vw;
+        width: 100vw;
+    }
+    video {
+        height: 100vw;
+        width: 100vw;
+    }
+    .barra_fim_mobile {
+        display: initial;
+        display: flex;
+        position: fixed;
+        bottom: 0;
+    }
 }
