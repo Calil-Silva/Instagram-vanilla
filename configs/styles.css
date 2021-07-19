@@ -4,25 +4,29 @@
     font-family: Roboto;
     font-size: 12px;
     color: rgba(38, 38, 38, 1);
-    height: 1900px;
+    height: 2100px;
     overflow: hidden;
 }
 
 /* Barra */
 .barra {
+    position: fixed;
+    height: 54px;
+    width: 935px;
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(255, 255, 255, 1);
-    margin-top: 13px;
-    margin-bottom: 13px;
+    z-index: 1;
 }
 .inicio {
     display: flex;
     align-items: center;
 }
 .barra2 {
+    position: fixed;
+    height: 54px;
+    z-index: 1;
     display: none;
     width: 100%;
     align-items: center;
@@ -37,15 +41,16 @@
 .separadorVertical {
     width: 1px;
     height: 25px;
-    background-color: #e6e6e6;
+    background-color: rebeccapurple;
     margin-left: 10px   ;
     margin-right: 10px;
 }
 .separadorHorizontal {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 1px;
     background-color: #e6e6e6;
+    top: 54px;
     left: 0;
     right: 0;
 }
@@ -76,7 +81,7 @@ ion-icon {
 .caixa {
     width: 614px;
     height: 118px;
-    margin-top: 34px;
+    margin-top: 88px;
     border: 1px solid #e6e6e6;
     display: flex;
     overflow: hidden;
@@ -85,8 +90,7 @@ ion-icon {
     font-size: 25px;;
     left: 5px;
     margin-bottom: 13px;
-    z-index: 1;
-    color: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 1em #e6e6e6;
     background-color: white;
 }
 .caixa img:nth-child(odd) {
@@ -176,11 +180,63 @@ video {
     border-radius: 100%;
     margin-right: 5px;
 }
+.separador {
+    height: 1px;
+    width: 100%;
+    background-color: #e6e6e6;
+    margin-top: 10px;
+}
+.comentarios h2 {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.comentarios h7 {
+    font-size: 9px;
+    color: gray;
+    margin-left: 10px;
+}
+.comentar {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.comentario {
+    display: flex;
+    align-items: center;
+}
+.comentario ion-icon {
+    margin-right: 10px;
+}
+input {
+    border: none;
+}
+button {
+    color: #B2DFFC;
+    background: white;
+    border: none;
+    margin-right: 10px ;
+}
+button:hover {
+    transition-property: color;
+    transition-duration: 300ms;
+    color: #0095F6;
+}
+
 
 /* Sidebar */
+.positionRelative {
+    position: relative;
+}
+.positionAbsolute {
+    position: absolute;
+    right: 293px;
+}
 .sidebar {
     width: 293px;
-    margin-top: 57px;
+    margin-top: 111px;
+    position: fixed;
 }
 .catana {
     display: flex;
@@ -272,6 +328,7 @@ h7 {
     .barra {
         margin-right: 18px;
         margin-left: 18px;
+        width: 100%;
     }
     .espaçamento ion-icon:last-child {
         margin-right: 40px;
@@ -281,13 +338,14 @@ h7 {
 @media (max-width: 614px) {
     .layout {
         width: 100%;
-        height: 1470px;
+        height: 1800px;
         overflow: hidden;
 
     }
     .barra {
         display: none;
     }
+
     .inicio {
         display: none;
     }
@@ -295,19 +353,25 @@ h7 {
         display: initial;
     }
     .caixa {
-        margin-top: 0;
+        margin-top: 54px;
         width: 100%;
         color: rgba(38, 38, 38, 1);
+        border-left: none;
+        border-right: none;
     }
     .post1 {
         width: auto;
         width: 100%;
+        border: none;
+        border-bottom: 1px solid #e6e6e6;
+        border-top: 1px solid #e6e6e6;
     }
     div .post1:first-child {
         margin-top: 0;
         border-top: none;
     }
     .post1 {
+        margin-top: 60px;
         width: 100vw;
     }
     .gato img {
@@ -323,5 +387,10 @@ h7 {
         display: flex;
         position: fixed;
         bottom: 0;
+        border-top: 1px solid #e6e6e6;
     }
+    .caixa ion-icon:last-child {
+        display: none;
+    }
+
 }
